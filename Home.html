@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .header{
+            background-color: black;
+            height: 40px;
+            border-radius: 25px;
+        }
+        .header, a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            padding-top: 22px;
+        }
+
+        h1{
+            color: red;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="{% url 'home'  %}">Home</a>
+        <a href="{% url 'about'  %}">About</a>
+        <a href="{% url 'blog'  %}">Blog</a>
+        <a href="{% url 'contact'  %}">Contact</a>
+    </div>
+
+    <h1>Welcome to my first Home Page</h1>
+
+
+</body>
+</html>
